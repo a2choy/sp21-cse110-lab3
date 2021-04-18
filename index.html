@@ -7,16 +7,17 @@
     <meta name="author" content="Austin Choy">
     <link rel="shortcut icon" type="image/png" href="screenshots/example.png" />
     <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <style>
         body {
-          background-color: linen;
+            background-color: linen;
         }
     </style>
 </head>
 
 <body>
     <header class="page-header">
-        <h1>My Page</h1>
+        <h1>The journal logs of Austin Choy (me)</h1>
     </header>
 
     <main>
@@ -26,9 +27,12 @@
     </main>
 
     <nav>
-        <a style="max-width: 400px; max-height: 50px; width: 220px; height: 20px; background:lightblue; display: block;" href="https://en.wikipedia.org/wiki/April_6">April 6th</a>
-        <a style="max-width: 400px; max-height: 50px; width: 220px; height: 20px; background:lightblue; display: block;" href="https://en.wikipedia.org/wiki/April_7">April 7th</a>
-        <a style="max-width: 400px; max-height: 50px; width: 220px; height: 20px; background:lightblue; display: block;" href="https://en.wikipedia.org/wiki/April_8">April 8th</a>
+        <a style="max-width: 400px; max-height: 50px; width: 220px; height: 20px; background:lightblue; display: block;"
+            href="https://en.wikipedia.org/wiki/April_6">April 6th</a>
+        <a style="max-width: 400px; max-height: 50px; width: 220px; height: 20px; background:lightblue; display: block;"
+            href="https://en.wikipedia.org/wiki/April_7">April 7th</a>
+        <a style="max-width: 400px; max-height: 50px; width: 220px; height: 20px; background:lightblue; display: block;"
+            href="https://en.wikipedia.org/wiki/April_8">April 8th</a>
     </nav>
 
     <nav>
@@ -37,78 +41,139 @@
         <a href="https://en.wikipedia.org/wiki/April_11">April 11th</a>
     </nav>
 
-    <h1 style="color:blue;">Days</h1>
-    <h2>April 9th</h2>
-    <h3>6am</h3>
-    <p>
-        I woke up and went to the following classes:
-    </p>
-    <ul>
-        <li>Soci 165</li>
-        <li>CSE 140</li>
-    </ul>
-    <h3>12pm</h3>
-    <p>
-        I meant to stay up but was tired from missing a good time to sleep the previous day due to time zone issues with
-        class, so I fell asleep.
-    </p>
-    <h3>6pm</h3>
-    <p>
-        I woke up and realized I needed to eat so I tried to find something to eat at home. There wasn't much but made
-        fried rice.
-    </p>
-    <h3>9pm</h3>
-    <p>
-        I had some homework to do and also was going to meet friends tomorrow. I took the risk and just slept since I
-        was too tired, hopefully the hw would prove doable on sunday.
-    </p>
-    <hr>
-    <h2>April 10th</h2>
-    <h3>9am</h3>
-    <p>
-        I went to visit a friends place but the commute was very long. We had to go from:
-    </p>
-    <ol>
-        <li>Yongin Bus Terminal</li>
-        <li>Sanghyun Train Station</li>
-        <li>Yangjae Train Station</li>
-        <li>Gwanghamoon Train Station</li>
-    </ol>
-    <p>When I arrived people were protesting about the government with bunch of music and noise</p>
-    <figure>
-        <audio controls src="screenshots/drum.mp3">
-        </audio>
-    </figure>
-    <h3>12pm</h3>
-    <p>
-        We ate lunch at a nearby ramen place, <strong><em>Aori Ramen</em></strong> We chatted about stuff that was going
-        on since we have not been able to see each other for quite a bit now.
-    </p>
-    <h3>3pm</h3>
-    <p>
-        We watched the movie <b><i>"Judas and the Black Messiah"</i></b> which was quite good and interesting. We were
-        chatting about interesting things going on while watching since we were viewing at home not a theatre.
-    </p>
-    <img class="fit-picture" src="screenshots/judas.jpg" alt="Poster">
-    <video controls width="250">
-        <source src="screenshots/judasvid.mp4" type="video/mp4">
-    </video>
-    <h3>3pm</h3>
-    <p>
-        We ate dinner and went home, overall the commute took over 5hrs which was not ideal.
-    </p>
-    <hr>
-    <h2>April 11th</h2>
-    <h3>9am</h3>
-    <p>
-        I woke up and started to watch some lectures that I needed refreshers on.
-    </p>
-    <h3>12pm</h3>
-    <p>
-        I started on the hws and bounced between the couple of hws that needed to be completed.
-    </p>
-    <hr>
-
+    <div class="containerone">
+        <div>
+            <h1 style="color:blue;">Days</h1>
+        </div>
+        <div>
+            <h2 id="head2">April 9th</h2>
+        </div>
+        <div class="containerfour">
+            <div>
+                <h3>6am</h3>
+                <p>
+                    I woke up and went to the following classes:
+                </p>
+                <ul>
+                    <li>Soci 165</li>
+                    <li>CSE 140</li>
+                </ul>
+            </div>
+            <div>
+                <h3>12pm</h3>
+                <p>
+                    I meant to stay up but was tired from missing a good time to sleep the previous day due to time zone
+                    issues
+                    with
+                    class, so I fell asleep.
+                </p>
+            </div>
+            <div>
+                <h3>6pm</h3>
+                <p>
+                    I woke up and realized I needed to eat so I tried to find something to eat at home. There wasn't
+                    much
+                    but
+                    made
+                    fried rice.
+                </p>
+            </div>
+            <div>
+                <h3>9pm</h3>
+                <p>
+                    I had some homework to do and also was going to meet friends tomorrow. I took the risk and just
+                    slept
+                    since
+                    I
+                    was too tired, hopefully the hw would prove doable on sunday.
+                </p>
+                <hr>
+            </div>
+        </div>
+        <div>
+            <h2 id="head2">April 10th</h2>
+        </div>
+        <div class="containerfive">
+            <div>
+                <h3>9am</h3>
+                <p>
+                    I went to visit a friends place but the commute was very long. We had to go from:
+                </p>
+                <ol>
+                    <li>Yongin Bus Terminal</li>
+                    <li>Sanghyun Train Station</li>
+                    <li>Yangjae Train Station</li>
+                    <li>Gwanghamoon Train Station</li>
+                </ol>
+                <p>When I arrived people were protesting about the government with bunch of music and noise</p>
+                <figure>
+                    <audio controls src="screenshots/drum.mp3">
+                    </audio>
+                </figure>
+            </div>
+            <div>
+                <h3>12pm</h3>
+                <p>
+                    We ate lunch at a nearby ramen place, <strong><em>Aori Ramen</em></strong> We chatted about stuff that was going on since we have not been able to see each other for quite a bit now.
+                </p>
+            </div>
+            <div>
+                <h3>3pm</h3>
+                <p>
+                    We watched the movie <b><i>"Judas and the Black Messiah"</i></b> which was quite good and interesting. We were chatting about interesting things going on while watching since we were viewing at home not a theatre.
+                </p>
+                <div class="containertwo">
+                    <div>
+                        <img class="fit-picture" src="screenshots/judas.jpg" alt="Poster">
+                    </div>
+                    <div>
+                        <video controls width="250">
+                            <source src="screenshots/judasvid.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>6pm</h3>
+                <p>
+                    We ate dinner and went home, overall the commute took over 5hrs which was not ideal.
+                </p>
+                <hr>
+            </div>
+        </div>
+        <div>
+            <h2 id="head2">April 11th</h2>
+        </div>
+        <div class="containersix">
+            <div>
+                <h3>9am</h3>
+                <p>
+                    I woke up and started to watch some lectures that I needed refreshers on.
+                </p>
+            </div>
+            <div>
+                <h3>12pm</h3>
+                <p>
+                    I started on the hws and bounced between the couple of hws that needed to be completed.
+                </p>
+                <hr>
+            </div>
+            <div>
+                <h3>6pm</h3>
+                <p>
+                    I finished the hws and went to find dinner
+                </p>
+                <hr>
+            </div>
+            <div>
+                <h3>12am</h3>
+                <p>
+                    I went to sleep.
+                </p>
+                <hr>
+            </div>
+        </div>
+    </div>
     <details>
         <summary>Thank you for reading! you can contact me at:</summary>
         <a href="mailto:a2choy@ucsd.edu">Email</a>
@@ -118,25 +183,27 @@
     <br>
 
     <section>Create new entry</section>
+    <br>
     <form action="http://www.example.com" method="get" class="form-example">
-        <div class="form-example">
-            <label for="name">Enter Name: </label>
-            <input type="text" name="name" id="name" required>
-        </div>
-        <div class="form-example">
-            <label for="date">Enter Date: </label>
-            <input type="date" name="date" id="date" required>
-        </div>
-        <div class="form-example">
-            <label for="entry">Enter entry: </label>
-            <textarea id="entry" name="entry" rows="5" cols="33">Enter your journal here...
+        <div class="containerthree">
+            <div class="form-example">
+                <label for="entry">Enter entry: </label>
+                <textarea id="entry" name="entry" rows="5" cols="33">Enter your journal here...
             </textarea>
+            </div>
+            <div class="form-example">
+                <label for="rain">Was it raining?: </label>
+                <input type="checkbox" name="rain" id="rain" required>
+            </div>
+            <div class="form-example">
+                <label for="date">Enter Date: </label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div class="form-example">
+                <label for="name">Enter Name: </label>
+                <input type="text" name="name" id="name" required>
+            </div>
         </div>
-        <div class="form-example">
-            <label for="rain">Was it raining?: </label>
-            <input type="checkbox" name="rain" id="rain" required>
-        </div>
-
         <fieldset>
             <legend>Rate your day from worst to great</legend>
 
