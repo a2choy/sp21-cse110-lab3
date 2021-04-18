@@ -1,0 +1,53 @@
+header { /*My page header always visible*/
+    z-index: 100;
+    position: sticky;
+    top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 120px;
+    height: 40px;
+    background: white;
+}
+h1 { /*makes the heading navy blue*/
+    color: navy; 
+    font-size: xx-large;
+}
+h2 { /*makes the heading sky blue and smaller text size than h1*/
+    color: skyblue; 
+    font-size: large;
+}
+h3 { /*makes the heading be tabbed inwards*/
+    background: lightyellow;
+    left: 15px;
+    width: 60px;
+    position: relative;
+}
+p { /*makes the journal be tabbed inwards even more*/
+    left: 25px;
+    position: relative;
+}
+ol { /*adds a purple border*/
+    border: 2px solid rebeccapurple;
+    padding: 2em;
+    width: 190px;
+}
+ul { /*adds a slightly different purple border*/
+    border: 2px solid rebeccapurple;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    width: 90px;
+}
+a { /*puts the links in a green box of a set size that is in 1 line*/
+    max-width: 400px; 
+    max-height: 50px; 
+    width: 220px;
+    height: 20px; 
+    background:lightgreen; 
+    display: inline-block;
+}
+fieldset{ /*makes the fieldset not make a box the size of the entire screen*/
+    width: 290px;
+}
+summary { /*makes the summary not make a box the size of the entire screen*/
+    width: 390px;
+}
