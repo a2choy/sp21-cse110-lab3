@@ -1,18 +1,23 @@
+*{ /*default color is black*/
+    color: black;
+}
 header { /*My page header always visible*/
     z-index: 100;
     position: sticky;
     top: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    width: 120px;
+    width: 320px;
     height: 40px;
+    font-family: 'Tangerine', serif;
     background: white;
 }
 h1 { /*makes the heading navy blue*/
     color: navy; 
     font-size: xx-large;
+    text-align: left;
 }
-h2 { /*makes the heading sky blue and smaller text size than h1*/
+#head2 { /*makes the heading sky blue and smaller text size than h1*/
     color: skyblue; 
     font-size: large;
 }
@@ -21,21 +26,39 @@ h3 { /*makes the heading be tabbed inwards*/
     left: 15px;
     width: 60px;
     position: relative;
+    text-decoration: underline;
 }
-p { /*makes the journal be tabbed inwards even more*/
+div p {
+    color:grey;
+}
+div > h2 {
+    background-color: yellow;
+    width: 100px;
+}
+br + section {
+    background-color: gold;
+    width: 130px;
+}
+fieldset ~ label{
+    background: lightseagreen;
+}
+p { /*makes the journal be tabbed inwards even more, also selects from some generic fonts*/
     left: 25px;
     position: relative;
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
 }
 ol { /*adds a purple border*/
     border: 2px solid rebeccapurple;
-    padding: 2em;
-    width: 190px;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 190pt;
 }
 ul { /*adds a slightly different purple border*/
+    border-style: none;
     border: 2px solid rebeccapurple;
     margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    width: 90px;
+    margin-bottom: 0.5ex;
+    width: 3cm;
 }
 a { /*puts the links in a green box of a set size that is in 1 line*/
     max-width: 400px; 
@@ -45,9 +68,48 @@ a { /*puts the links in a green box of a set size that is in 1 line*/
     background:lightgreen; 
     display: inline-block;
 }
-fieldset{ /*makes the fieldset not make a box the size of the entire screen*/
-    width: 290px;
+a[href="mailto:a2choy@ucsd.edu"] { 
+    background:greenyellow;
 }
-summary { /*makes the summary not make a box the size of the entire screen*/
+fieldset, summary{ /*makes the fieldset and summary not make a box the size of the entire screen*/
     width: 390px;
+}
+button:hover { /*hovering button highlights it blue*/
+    background: cyan;
+}
+button:active { /*clicking button highlights it red*/
+    background: red;
+}
+div.containerone{
+    background:lightcyan;
+}
+.containerone {
+    display: flex; 
+    flex-direction: column;
+}
+.containertwo {
+    display: flex; 
+    flex-direction: row;
+}
+.containerthree {
+    display: flex; 
+    flex-direction: column-reverse;
+}
+.containerfour {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.containerfive {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.containersix {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+@media all and (max-width: 600px){
+    body {
+        background-color: pink;
+    }
 }
